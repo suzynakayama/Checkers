@@ -1,0 +1,53 @@
+--> Game rules:
+    - 2 players
+    - 64 cells (32 white and 32 black)
+    - Moves are diagonally:
+        - regular piece:
+            - moves only foward
+            - moves 1 cell each time unless the opposite player is there, then he can "eat" the opposite piece jumping over it
+            - multiple jumps allowed during 1 turn
+            - if the player can "eat" the opposite piece, it has to do it
+        - king piece (when player's piece reache the other side of the board):
+            - can move foward or backward
+            - can move more than 1 cell at a time
+
+--> When game loads:
+    - init()
+    - render()
+
+--> When a regular piece moves:
+    - Get the start cell clicked and the end cell clicked
+    - Check if there is an opposite piece in that cell or the other diagonal cell
+        - If yes:
+            - check if there is an empty cell after it:
+                - if yes: player will jump over that cell
+                - if no: render msg that player cannot go this diagonal
+
+        - If it's the other diagonal, render msg that player needs to "eat" that piece
+        - If opposite piece on both diagonals, let player choose
+    - check winner
+    - switch turns
+    - render the board
+
+--> When a king piece moves:
+    - Get the start cell clicked and the end cell clicked
+    - Check if there is any opposite pieces in the middle cells with white pieces in between
+        - If yes:
+            - check if there is an empty cell after it:
+                - if yes: player will jump over that cell
+                - if no: render msg that player cannot go this diagonal
+
+        - If it's the other diagonal, render msg that player needs to "eat" that piece
+        - If opposite piece on both diagonals, let player choose
+    - check winner
+    - switch turns
+    - render the board
+
+--> Winner logic:
+
+
+--> Render logic:
+    - Render board:
+
+
+    - Render msg:
