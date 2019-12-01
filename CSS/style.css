@@ -17,21 +17,36 @@ main {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
     text-shadow: 0 3px 3px #aaa;
 }
 
 #top {
     display: flex;
-    font-size: 2em;
-    margin-top: 2em;
+    font-size: 1.5em;
+    margin-top: 1em;
     justify-content: space-around;
+    height: 120px;
 }
 
 img {
-    width: 100px;
+    width: 70px;
     margin: 20px 20px;
+}
+
+button {
+    font-family: 'Oldenburg', cursive;
+    font-size: 0.6em;
+    height: 60px;
+    width: 80px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #aaa;
+    margin-top: 20px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #game {
@@ -42,15 +57,43 @@ img {
     margin: 20px 20px;
 }
 
+#dino1ate {
+    grid-column: 1 / 2;
+    justify-self: center;
+}
+
+#board {
+    grid-column: 2 / 3;
+    justify-self: center;
+    display: flex;
+    width: 560px;
+    flex-wrap: wrap;
+}
+
+#board div {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000
+}
+
+.black {
+    background-color: #000;
+}
+
+#dino2ate {
+    grid-column: 3 / 4;
+    justify-self: center;
+}
+
 #msg {
     text-align: center;
     margin-top: 30px;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 footer {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .icons {
